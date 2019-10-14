@@ -19,13 +19,15 @@
         <field name="model">library_book.library_book</field>
         <field name="arch" type="xml">
             <form>
+                <h1 style="color:blue;"> library book </h1>
                 <group>
                     <field name="name"/>
+                    <field name="father_name"/>
+                    <field name="agee"/>
+                    <field name="description"/>
                     <field name="author_ids" widget="many2many_tags"/>
                 </group>
-                <group>
-                    <field name="date_release"/>
-                </group>
+
             </form>
         </field>
     </record>
@@ -37,7 +39,8 @@
         <field name="arch" type="xml">
             <tree>
                 <field name="name"/>
-                <field name="date_release"/>
+                <field name="description"/>
+                
             </tree>
         </field>
     </record>
